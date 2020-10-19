@@ -3,22 +3,32 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const first = "Adam";
+  const last = "Clark";
+  const age = 32;
+  const job = "Anonymous";
+
+  const mArr = [1,2,3,4];
+
+  const mObj ={
+    name: "Ankit",
+    age: 23
+  }
+
+  const iplaceholder="Enter your details";
+
+  const detailsplace =  <input placeholder={iplaceholder}/>
+  
+  const fullName = (first, last) => {
+    return (`${first} ${last}`);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div>
+       <h3> Blog Title 1</h3>
+       <p>  Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor</p>
+     </div>
     </div>
   );
 }
